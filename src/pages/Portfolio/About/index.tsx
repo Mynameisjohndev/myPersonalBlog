@@ -5,7 +5,6 @@ import { ContainerAboutPage } from './styles';
 const About = () => {
   return (
     <ContainerAboutPage>
-      {/* style={{ paddingTop: 100 }} */}
       <div className="container-description">
         <div className="column-description">
           <h2>Olá, meu nome é</h2>
@@ -25,7 +24,7 @@ const About = () => {
           <Social />
         </div>
       </div>
-      <img className="user_profile_photo" src={photo} />
+      <img className="user_profile_photo" src={photo} draggable="false" />
     </ContainerAboutPage>
   );
 };

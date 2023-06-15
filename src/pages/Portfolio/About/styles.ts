@@ -1,14 +1,13 @@
 import { css, styled } from 'styled-components';
 
 export const ContainerAboutPage = styled.section`
-  /* height: 100vh; */
   min-height: 100vh;
   min-width: 100%;
   padding: 3rem;
-  /* padding-top: calc(3rem + 100px); */
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  transition: 0.3s all;
 
   ${({ theme }) => css`
     background-color: ${theme.COLORS.BLACK_40};
@@ -16,6 +15,7 @@ export const ContainerAboutPage = styled.section`
       display: flex;
       flex-direction: row;
       width: 70%;
+      transition: 0.3s all;
       &::before {
         content: '';
         display: block;
@@ -26,21 +26,26 @@ export const ContainerAboutPage = styled.section`
       }
 
       .column-description {
+        transition: 0.3s all;
         padding-left: 1rem;
         h2 {
+          transition: 0.3s all;
           color: ${theme.COLORS.GREEN_30};
           font-size: 2rem;
         }
         h1 {
+          transition: 0.3s all;
           font-size: 7rem;
           font-weight: bolder;
           color: ${theme.COLORS.WHITE};
         }
         p {
+          transition: 0.3s all;
           font-size: 1.4rem;
           color: ${theme.COLORS.WHITE};
         }
         a {
+          transition: 0.3s all;
           font-size: 1.4rem;
           color: ${theme.COLORS.GREEN_30};
           text-decoration: none;
@@ -51,6 +56,7 @@ export const ContainerAboutPage = styled.section`
   `}
 
   .user_profile_photo {
+    transition: 0.3s all;
     width: 350px;
     height: 350px;
     margin-bottom: 5rem;

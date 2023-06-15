@@ -1,16 +1,18 @@
 import { createGlobalStyle, styled } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: 0.3s all;
     scroll-behavior: smooth;
   }
 
+
   ::-webkit-scrollbar {
     width: 15px;
+    background-color: #313131; 
   }
  
   ::-webkit-scrollbar-corner 
@@ -36,6 +38,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
   }
 
+  html{
+    background-color: #313131; 
+  }
+
   button{
     cursor: pointer;
   }
@@ -55,7 +61,7 @@ const Column = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 `;
 
 const Row = styled.div`

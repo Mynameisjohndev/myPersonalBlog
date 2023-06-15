@@ -10,17 +10,18 @@ const ContainerSocial = styled.nav`
   height: 60px;
   margin-top: 1rem;
   width: calc(4 * (${icon}rem + 1rem));
+  transition: 0.3s all;
   svg {
     margin-right: 1rem;
     width: ${icon}rem;
     height: ${icon}rem;
     cursor: pointer;
-    transition: 0.2s all;
+    transition: 0.1s all;
     ${({ theme }) => css`
       color: ${theme.COLORS.WHITE};
       &:hover {
         color: ${({ theme }) => theme.COLORS.GREEN_30};
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
       }
     `};
   }

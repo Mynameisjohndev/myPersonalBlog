@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const ContainerHeader = styled.nav`
+  transition: 0.3s all;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,6 +12,7 @@ const ContainerHeader = styled.nav`
   backdrop-filter: blur(10px);
 
   li {
+    transition: 0.3s all;
     list-style: none;
     margin-right: 3rem;
     ${({ theme }) => css`
