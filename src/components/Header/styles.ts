@@ -6,8 +6,10 @@ const ContainerHeader = styled.nav`
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+
   li {
     list-style: none;
     margin-right: 3rem;
@@ -16,7 +18,7 @@ const ContainerHeader = styled.nav`
       font-weight: bold;
     `}
   }
-  position: absolute;
+  position: fixed;
   top: 0;
   @media (max-height: 550px) {
     display: none;
