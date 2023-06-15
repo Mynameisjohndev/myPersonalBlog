@@ -19,7 +19,7 @@ const About = () => {
             <a href="https://severustech.netlify.app" target="_blank">
               SeverusTech
             </a>{' '}
-            onde ocupo este cargo e também sou fundador.
+            ocupando o mesmo cargo e também sou fundador.
           </p>
           <Social />
         </div>

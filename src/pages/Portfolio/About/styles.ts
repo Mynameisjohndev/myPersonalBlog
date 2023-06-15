@@ -37,12 +37,10 @@ export const ContainerAboutPage = styled.section`
           transition: 0.3s all;
           font-size: 7rem;
           font-weight: bolder;
-          color: ${theme.COLORS.WHITE};
         }
         p {
           transition: 0.3s all;
           font-size: 1.4rem;
-          color: ${theme.COLORS.WHITE};
         }
         a {
           transition: 0.3s all;
@@ -59,7 +57,7 @@ export const ContainerAboutPage = styled.section`
     transition: 0.3s all;
     width: 350px;
     height: 350px;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     @media (max-width: 750px) {
       width: 200px;
       height: 200px;

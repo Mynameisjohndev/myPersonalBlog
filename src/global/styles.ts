@@ -35,7 +35,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   input, html{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
   }
 
   html{
