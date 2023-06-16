@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 // import { FaRegCircle } from 'react-icons/fa';
 
 import Experience from '../../assets/Experience.svg';
-import { ContentRow, SelectExperienceContainer } from './CustomScroll';
+import { returnIconByTechnology } from '../../utils/returnIconByTechnology';
+import { ContentRow, SelectExperienceContainer } from './styles';
 
 export interface IExperience {
   ocupation: string;
   company: string;
-  office: string;
+  office?: string;
+  city?: string;
   date: string;
   techs: string[];
   description: string[];
@@ -27,7 +29,7 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
       setActiveSection(newActiveSection);
     }
   };
-  const { company, date, ocupation, office, techs, description } =
+  const { company, date, ocupation, city, techs, description } =
     sections[activeSection];
 
   return (
@@ -40,7 +42,12 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
       <ContentRow>
         <div className="title-experience">
           <div className="column-experience">
-            <div className="row-experience">
+            <div
+              className="row-experience"
+              style={{
+                alignItems: 'flex-start',
+              }}
+            >
               <img src={Experience} />
               <h1>
                 {ocupation} - <b className="green">{company}</b>
@@ -48,20 +55,22 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
             </div>
             <div className="row-experience">
               <span>
-                Cargo: <b className="green">{office}</b>
+                <b className="green">Cidade: </b>
+                {city}
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{date}
               </span>
             </div>
           </div>
         </div>
-        <div>
+        <div className="description-list">
           {description.map(item => {
             return <p className="description-item">{item}</p>;
           })}
         </div>
-        <div>
+        <h3 className="subtitle"> Tecnologias Usadas</h3>
+        <div className="description-techs">
           {techs.map(item => {
-            return <p>{item}</p>;
+            return <>{returnIconByTechnology(item)}</>;
           })}
         </div>
       </ContentRow>

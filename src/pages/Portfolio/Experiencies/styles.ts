@@ -1,6 +1,9 @@
 import { styled } from 'styled-components';
 
+const { height, width } = window.screen;
+
 export const ContainerExperiencePage = styled.section`
+  /* height: 100vh; */
   min-height: 100vh;
   min-width: 100%;
   padding: 3rem;
@@ -9,32 +12,31 @@ export const ContainerExperiencePage = styled.section`
   justify-content: space-between;
   align-items: center;
   transition: 0.3s all;
-  /* align-items: center; */
-  /* justify-content: center; */
   .column-experience {
     transition: 0.3s all;
-    width: 67%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
     h1 {
       transition: 0.3s all;
       font-size: 2.5rem;
       font-weight: bold;
     }
-    display: flex;
-    flex-direction: column;
-    height: 100%;
   }
   .ilustration {
     width: 30%;
-    height: 230px;
   }
   @media (max-width: 950px) {
     flex-direction: column;
     .column-experience {
       width: 100%;
+      margin-bottom: 1rem;
     }
-    .ilustration {
-      width: 250px;
-      height: 250px;
+  }
+  @media (max-height: 500px) {
+    .column-experience {
+      height: 100%;
     }
   }
 `;

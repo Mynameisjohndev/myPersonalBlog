@@ -57,12 +57,9 @@ const ContainerPage = styled.section`
 
 const Column = styled.div`
   display: flex;
-  /* height: 100vh; */
-  /* background-color: red; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* overflow-y: auto; */
 `;
 
 const Row = styled.div`
@@ -70,7 +67,6 @@ const Row = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  overflow-y: auto;
 `;
 
 export { GlobalStyle, ContainerPage, Column, Row };
