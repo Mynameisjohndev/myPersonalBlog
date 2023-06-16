@@ -1,5 +1,16 @@
 import { darken } from 'polished';
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+
+const slideUpAnimation = keyframes`
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 const SelectExperienceContainer = styled.div`
   padding-left: 3rem;
@@ -35,10 +46,28 @@ const SelectExperienceContainer = styled.div`
     width: 100%;
     height: 100%;
   }
+  .fade-enter {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 800ms;
+  }
+
+  .fade-exit {
+    opacity: 1;
+  }
+
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 100ms;
+  }
 `;
 
 const ContentRow = styled.div`
-  flex: 2;
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
