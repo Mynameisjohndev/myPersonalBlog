@@ -68,6 +68,9 @@ const ContentRow = styled.div`
       }
     }
   }
+  .description-item {
+    margin-top: 1rem;
+  }
 `;
 
 export { SelectExperienceContainer, ContentRow };

@@ -27,7 +27,8 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
       setActiveSection(newActiveSection);
     }
   };
-  const { company, date, ocupation, office, techs } = sections[activeSection];
+  const { company, date, ocupation, office, techs, description } =
+    sections[activeSection];
 
   return (
     <SelectExperienceContainer>
@@ -53,25 +54,16 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
             </div>
           </div>
         </div>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
-        <h1>oi</h1>
+        <div>
+          {description.map(item => {
+            return <p className="description-item">{item}</p>;
+          })}
+        </div>
+        <div>
+          {techs.map(item => {
+            return <p>{item}</p>;
+          })}
+        </div>
       </ContentRow>
     </SelectExperienceContainer>
   );
