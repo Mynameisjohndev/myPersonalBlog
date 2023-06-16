@@ -1,16 +1,5 @@
 import { darken } from 'polished';
-import styled, { css, keyframes } from 'styled-components';
-
-const slideUpAnimation = keyframes`
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-`;
+import styled from 'styled-components';
 
 const SelectExperienceContainer = styled.div`
   padding-left: 3rem;

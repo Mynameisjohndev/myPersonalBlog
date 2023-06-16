@@ -20,7 +20,6 @@ interface ISelectExperience {
 
 const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
   const [activeSection, setActiveSection] = useState(0);
-  const [animate, setAnimate] = useState(false);
 
   const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
     const scrollPosition = event.currentTarget.scrollLeft;

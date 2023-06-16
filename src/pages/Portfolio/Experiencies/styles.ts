@@ -1,4 +1,4 @@
-import { styled, keyframes } from 'styled-components';
+import { styled } from 'styled-components';
 
 export const ContainerExperiencePage = styled.section`
   /* height: 100vh; */
