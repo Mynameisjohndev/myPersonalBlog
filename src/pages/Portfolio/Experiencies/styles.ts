@@ -1,7 +1,5 @@
 import { styled } from 'styled-components';
 
-const { height, width } = window.screen;
-
 export const ContainerExperiencePage = styled.section`
   /* height: 100vh; */
   min-height: 100vh;
