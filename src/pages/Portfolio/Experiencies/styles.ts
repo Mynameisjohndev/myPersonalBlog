@@ -1,8 +1,8 @@
 import { styled } from 'styled-components';
 
 export const ContainerExperiencePage = styled.section`
-  /* height: 100vh; */
   min-height: 100vh;
+  max-height: 100%;
   min-width: 100%;
   padding: 3rem;
   display: flex;
@@ -15,7 +15,11 @@ export const ContainerExperiencePage = styled.section`
     width: 65%;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 460px;
+    /* overflow-y: auto; */
+    &::-webkit-scrollbar {
+      display: none;
+    }
     h1 {
       transition: 0.3s all;
       font-size: 2.5rem;
@@ -29,7 +33,6 @@ export const ContainerExperiencePage = styled.section`
     flex-direction: column;
     .column-experience {
       width: 100%;
-      margin-bottom: 1rem;
     }
   }
   @media (max-height: 500px) {

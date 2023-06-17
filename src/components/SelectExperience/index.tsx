@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React, { useEffect, useRef, useState } from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import Experience from '../../assets/Experience.svg';
@@ -20,8 +21,10 @@ interface ISelectExperience {
 
 const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
   const [activeSection, setActiveSection] = useState(0);
+  const scrollRef = useRef(null);
 
   const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
+    event.stopPropagation();
     const scrollPosition = event.currentTarget.scrollLeft;
     const sectionWidth = event.currentTarget.clientWidth;
     const newActiveSection = Math.round(scrollPosition / sectionWidth);
@@ -30,12 +33,39 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
     }
   };
 
+  useEffect(() => {
+    const scrollInterval = setInterval(() => {
+      if (scrollRef.current) {
+        const scrollElement = scrollRef.current as any;
+        const sectionWidth =
+          scrollElement.firstChild.getBoundingClientRect().width;
+        const nextSection = activeSection + 1;
+        if (nextSection < sections.length) {
+          requestAnimationFrame(() => {
+            scrollElement.scrollTo({
+              left: nextSection * sectionWidth,
+              behavior: 'smooth',
+            });
+          });
+        } else {
+          requestAnimationFrame(() => {
+            scrollElement.scrollTo({
+              left: 0,
+              behavior: 'smooth',
+            });
+          });
+        }
+      }
+    }, 5000);
+    return () => clearInterval(scrollInterval);
+  }, [activeSection]);
+
   const { company, date, ocupation, city, techs, description } =
     sections[activeSection];
 
   return (
     <SelectExperienceContainer>
-      <div className="scroll-row" onScroll={handleScroll}>
+      <div className="scroll-row" onScroll={handleScroll} ref={scrollRef}>
         {sections.map((_, index) => (
           <div key={index} className="scroll-stop" />
         ))}

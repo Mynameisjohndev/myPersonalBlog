@@ -2,13 +2,9 @@ import { darken } from 'polished';
 import styled from 'styled-components';
 
 const SelectExperienceContainer = styled.div`
-  padding-left: 3rem;
-  @media (max-width: 950px) {
-    padding-left: 0;
-  }
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
   transition: 0.3s all;
   .scroll-row {
     height: 1.7rem;
@@ -27,7 +23,6 @@ const SelectExperienceContainer = styled.div`
       background-color: ${({ theme }) => darken(0.04, theme.COLORS.GREEN_30)};
     }
   }
-
   .scroll-stop {
     transition: 0.3s all;
     display: inline-block;
@@ -37,26 +32,32 @@ const SelectExperienceContainer = styled.div`
   }
   .fade-enter {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateX(70%);
   }
-
   .fade-enter-active {
     opacity: 1;
-    transform: translateY(0);
-    transition: opacity 500ms, transform 800ms;
+    transform: translateX(0);
+    transition: opacity 2500ms, transform 1200ms;
   }
-
   .fade-exit {
     opacity: 1;
+    transform: translateX(0);
   }
-
   .fade-exit-active {
     opacity: 0;
+    transform: translateX(-100%);
     transition: opacity 100ms;
+  }
+  @media (max-width: 550px) {
+    width: 100%;
   }
 `;
 
 const ContentRow = styled.div`
+  padding: 3rem 0 0 3rem;
+  @media (max-width: 400px) {
+    padding: 0;
+  }
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
@@ -127,6 +128,31 @@ const ContentRow = styled.div`
       margin-right: 0.7rem;
       @media (max-width: 950px) {
         margin-bottom: 0.4rem;
+      }
+    }
+  }
+  @media (max-width: 550px) {
+    .title-experience {
+      .column-experience {
+        .row-experience {
+          h1 {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .description-list {
+      .description-item {
+        font-size: 0.6rem;
+      }
+    }
+    .subtitle {
+      font-size: 0.7rem;
+    }
+    .description-techs {
+      svg {
+        width: 20px;
+        height: 20px;
       }
     }
   }
