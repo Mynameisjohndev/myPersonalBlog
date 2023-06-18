@@ -4,6 +4,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import Experience from '../../assets/Experience.svg';
 import { returnIconByTechnology } from '../../utils/returnIconByTechnology';
+import Switch from '../Switch';
 import { ContentRow, SelectExperienceContainer } from './styles';
 
 export interface IExperience {
@@ -21,8 +22,11 @@ interface ISelectExperience {
 
 const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
   const [activeSection, setActiveSection] = useState(0);
+  const [activeReading, setActiveReading] = useState(true);
   const scrollRef = useRef(null);
-
+  const handleToggle = () => {
+    setActiveReading(!activeReading);
+  };
   const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
     event.stopPropagation();
     const scrollPosition = event.currentTarget.scrollLeft;
@@ -35,7 +39,7 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
 
   useEffect(() => {
     const scrollInterval = setInterval(() => {
-      if (scrollRef.current) {
+      if (scrollRef.current && activeReading) {
         const scrollElement = scrollRef.current as any;
         const sectionWidth =
           scrollElement.firstChild.getBoundingClientRect().width;
@@ -58,13 +62,17 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
       }
     }, 5000);
     return () => clearInterval(scrollInterval);
-  }, [activeSection]);
+  }, [activeSection, activeReading]);
 
   const { company, date, ocupation, city, techs, description } =
     sections[activeSection];
 
   return (
     <SelectExperienceContainer>
+      <div className="reading-row">
+        <h1 className="reading-title">Modo leitura</h1>
+        <Switch isChecked={activeReading} onToggle={handleToggle} />
+      </div>
       <div className="scroll-row" onScroll={handleScroll} ref={scrollRef}>
         {sections.map((_, index) => (
           <div key={index} className="scroll-stop" />

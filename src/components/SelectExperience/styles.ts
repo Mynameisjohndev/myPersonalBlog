@@ -51,6 +51,18 @@ const SelectExperienceContainer = styled.div`
   @media (max-width: 550px) {
     width: 100%;
   }
+  .reading-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    .reading-title {
+      font-size: 0.7rem;
+      margin-right: 0.6rem;
+      transition: 0.3s all;
+      color: ${({ theme }) => theme.COLORS.WHITE};
+    }
+  }
 `;
 
 const ContentRow = styled.div`
