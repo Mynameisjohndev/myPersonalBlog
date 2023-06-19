@@ -10,7 +10,7 @@ const ContainerHeader = styled.nav`
   height: 80px;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-
+  z-index: 10;
   li {
     transition: 0.3s all;
     list-style: none;
@@ -23,10 +23,10 @@ const ContainerHeader = styled.nav`
   position: fixed;
   top: 0;
   @media (max-height: 550px) {
-    display: none;
+    /* display: none; */
   }
   @media (max-width: 600px) {
-    display: none;
+    /* display: none; */
   }
 `;
 

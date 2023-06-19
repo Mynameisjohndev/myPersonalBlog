@@ -1,13 +1,14 @@
 import { styled } from 'styled-components';
 
 export const ContainerProjects = styled.section`
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   min-width: 100%;
   padding: 3rem;
   display: flex;
   flex-direction: column;
   /* background-color: whitesmoke; */
-  z-index: 10;
+  z-index: 3;
   /* align-items: center; */
   /* justify-content: center; */
 

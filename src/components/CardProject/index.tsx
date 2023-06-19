@@ -15,14 +15,20 @@ const CardProject: React.FC<ICardProject> = ({ project }) => {
           <button>Visite já</button>
         </a>
       </div>
+
       <div className="column-image">
-        <img src={returnProjectImage(image!)} />
+        <h1 className="mobile-title">{title}</h1>
+        <div className="container-image">
+          <img src={returnProjectImage(image!)} />
+          <div className="overlay-image"></div>
+        </div>
         <div className="row-techs">
           {techs?.map(tech => {
             return <span>{tech}</span>;
           })}
         </div>
       </div>
+
       {/* </div> */}
     </CardProjectContainer>
   );

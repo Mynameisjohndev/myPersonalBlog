@@ -5,16 +5,18 @@ import { IProject } from '../../interfaces/project';
 
 const CardProjectContainer = styled.div<IProject>`
   display: flex;
-  width: 90%;
-  /* background-color: blue; */
+  width: 100%;
+  padding: 3rem;
   flex-direction: ${({ index }) => (index % 2 === 0 ? 'row' : 'row-reverse')};
-  @media (max-width: 1100px) {
-    flex-direction: column;
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
+  @media (max-width: 400px) {
+    padding: 0;
   }
   justify-content: space-between;
   margin-bottom: 2rem;
   align-self: center;
-  padding: 3rem;
   transition: 0.3s all;
 
   .align-project {
@@ -23,11 +25,11 @@ const CardProjectContainer = styled.div<IProject>`
   }
 
   .column-project {
-    /* background-color: red; */
     transition: 0.3s all;
     display: flex;
     flex-direction: column;
-    /* width: 350px; */
+    width: 450px;
+    /* padding-left: 1rem; */
     p {
       transition: 0.3s all;
       width: 80%;
@@ -35,6 +37,9 @@ const CardProjectContainer = styled.div<IProject>`
     h1 {
       transition: 0.3s all;
       color: ${({ theme }) => theme.COLORS.GREEN_30};
+      @media (max-width: 1000px) {
+        display: none;
+      }
     }
     button {
       transition: 0.3s all;
@@ -43,7 +48,6 @@ const CardProjectContainer = styled.div<IProject>`
       border: 0;
       margin-top: 0.4rem;
       border-radius: 0.2rem;
-      /* padding: 1rem 2rem; */
       ${({ theme }) => css`
         color: ${theme.COLORS.WHITE};
         background-color: ${theme.COLORS.GREEN_30};
@@ -52,42 +56,94 @@ const CardProjectContainer = styled.div<IProject>`
         }
       `}
     }
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+    @media (max-width: 750px) {
+      p {
+        font-size: 0.7rem;
+      }
+      h1 {
+        font-size: 1.4rem;
+        @media (max-width: 1000px) {
+          /* display: none; */
+        }
+      }
+      button {
+      }
+    }
   }
   .column-image {
-    /* background-color: green; */
     ${({ index }) =>
       index % 2 === 0
         ? css`
-            margin-left: 4rem;
+            margin-left: 1rem;
           `
         : css`
-            margin-right: 4rem;
+            margin-right: 1rem;
           `}
+
+    .mobile-title {
+      display: none;
+      transition: 0.3s all;
+      color: ${({ theme }) => theme.COLORS.GREEN_30};
+      @media (max-width: 1000px) {
+        display: flex;
+      }
+      @media (max-width: 400px) {
+        font-size: 1rem;
+      }
+    }
     transition: 0.3s all;
     display: flex;
     flex-direction: column;
-    img {
+    .container-image {
+      position: relative;
+      display: inline-block;
       width: 450px;
       height: 250px;
-      &::before {
-        content: '';
-        display: block;
-        width: 1.2rem;
-        border-radius: 0.6rem;
-        height: 100%;
-        background-color: green;
+      @media (max-width: 1000px) {
+        width: 100%;
+        height: 30%;
       }
+    }
+    .overlay-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: ${({ theme }) => theme.COLORS.GREEN_30};
+      opacity: 0.6;
+      transition: 0.3s all;
+      border-radius: 0.6rem;
+      width: 100%;
+      height: 100%;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    img {
+      border-radius: 0.6rem;
+      width: 100%;
+      height: 100%;
+      transition: 0.3s all;
     }
     .row-techs {
       transition: 0.3s all;
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
     }
     span {
       transition: 0.3s all;
       margin-right: 0.6rem;
       font-size: 1rem;
       color: ${({ theme }) => theme.COLORS.WHITE};
+    }
+    @media (max-width: 1000px) {
+      margin: 0;
+      span {
+        font-size: 0.7rem;
+      }
     }
   }
 `;
