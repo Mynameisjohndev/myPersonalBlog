@@ -23,10 +23,10 @@ const ContainerHeader = styled.nav`
   position: fixed;
   top: 0;
   @media (max-height: 550px) {
-    /* display: none; */
+    display: none;
   }
   @media (max-width: 600px) {
-    /* display: none; */
+    display: none;
   }
 `;
 

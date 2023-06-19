@@ -35,7 +35,7 @@ export const ContainerAboutPage = styled.section`
         }
         h1 {
           transition: 0.3s all;
-          font-size: 7rem;
+          font-size: 5rem;
           font-weight: bolder;
         }
         p {
