@@ -6,7 +6,7 @@ export const ContainerProjects = styled.section`
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   z-index: 10;
   /* align-items: center; */
   /* justify-content: center; */

@@ -57,7 +57,7 @@ const SelectExperienceContainer = styled.div`
     align-items: center;
     justify-content: flex-start;
     .reading-title {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       margin-right: 0.6rem;
       transition: 0.3s all;
       color: ${({ theme }) => theme.COLORS.WHITE};

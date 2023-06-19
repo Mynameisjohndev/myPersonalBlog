@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "index": 0,
+      "title": "Site tudão chef’s",
+      "description": "Desenvolvi um site para uma lanchonete que oferece deliciosos lanches para seus clientes. Ele apresenta um cardápio completo, informações sobre a empresa e a função de já soliticar seu pedido direto do whats-app deles.",
+      "image": "tudao",
+      "link": "https://tudaochefsfood.com.br",
+      "techs": ["React", "Typescript", "GitHub"]
+    },
+    {
+      "index": 1,
+      "title": "Site Severus Tech",
+      "description": "Site da minha empresa onde oferecemos algumas soluções online para seu negócio, para que você possa tirar as ideias do papel e otimizar o seu serviço ou inicie um novo empreendimento.",
+      "image": "severus",
+      "link": "https://severustech.netlify.app",
+      "techs": ["React", "Typescript", "GitHub", "Firebase"]
+    },
+    {
+      "index": 2,
+      "title": "Dsmovie",
+      "description": "Esta foi uma aplicação de catalogo de filme que podem ser avaliadas pelos usuários, criada na semana spring react do dev superior.",
+      "image": "dsmovie",
+      "link": "https://dsmoviejoao.netlify.app",
+      "techs": ["React", "Typescript", "GitHub", "Java", "SpringBoot", "MongoDb"]
+    },
+    {
+      "index": 3,
+      "title": "Meta Collect",
+      "description": "Painel para vizualização de alguns dados das unidades de um laticineo assim como a funcionalidade principal que é acompanhar em tempo real a coleta de lete nas fazendas.",
+      "image": "meta",
+      "link": "https://colteste.datamilk.com.br/v1",
+      "techs": ["React","Typescript","Mysql","MapBox","Git"]
+    }
+  ]
+}

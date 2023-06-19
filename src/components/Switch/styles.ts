@@ -40,7 +40,7 @@ const SwitchLabel = styled.label`
     background-color: ${({ theme }) => theme.COLORS.GREEN_30};
   }
   ${SwitchCheckbox}:focus + ${SwitchSlider} {
-    box-shadow: 0 0 1px ${({ theme }) => theme.COLORS.GREEN_30};
+    /* box-shadow: 0 0 1px ${({ theme }) => theme.COLORS.GREEN_30}; */
   }
   ${SwitchCheckbox}:checked + ${SwitchSlider}:before {
     transform: translateX(26px);
