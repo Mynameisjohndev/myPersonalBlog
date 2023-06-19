@@ -9,9 +9,10 @@ const CardProject: React.FC<ICardProject> = ({ project }) => {
   return (
     <CardProjectContainer
       {...{ index }}
+      // data-aos="fade-up"
       data-aos={`${isEven ? 'fade-left' : 'fade-right'}`}
       // data-aos={`${isEven ? 'fade-right' : 'fade-left'}`}
-      data-aos-duration="1000"
+      // data-aos-duration="1000"
     >
       <div className="column-project">
         <h1>{title}</h1>

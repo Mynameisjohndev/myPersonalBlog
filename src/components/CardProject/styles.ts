@@ -5,8 +5,7 @@ import { IProject } from '../../interfaces/project';
 
 const CardProjectContainer = styled.div<IProject>`
   display: flex;
-  width: 100%;
-  padding: 3rem;
+  width: 94%;
   flex-direction: ${({ index }) => (index % 2 === 0 ? 'row' : 'row-reverse')};
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
