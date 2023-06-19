@@ -24,6 +24,7 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
   const [activeSection, setActiveSection] = useState(0);
   const [activeReading, setActiveReading] = useState(true);
   const scrollRef = useRef(null);
+  const cardRef = useRef(null);
   const handleToggle = () => {
     setActiveReading(!activeReading);
   };
@@ -51,6 +52,13 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
               behavior: 'smooth',
             });
           });
+          const card = cardRef.current as unknown as HTMLElement;
+          card.style.opacity = '0';
+          card.style.transform = 'translateX(-30px)';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateX(0px)';
+          }, 250);
         } else {
           requestAnimationFrame(() => {
             scrollElement.scrollTo({
@@ -58,6 +66,13 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
               behavior: 'smooth',
             });
           });
+          const card = cardRef.current as unknown as HTMLElement;
+          card.style.opacity = '0';
+          card.style.transform = 'translateX(-30px)';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateX(0px)';
+          }, 500);
         }
       }
     }, 5000);
@@ -78,49 +93,49 @@ const SelectExperience: React.FC<ISelectExperience> = ({ sections }) => {
           <div key={index} className="scroll-stop" />
         ))}
       </div>
-      <TransitionGroup>
-        <CSSTransition key={activeSection} timeout={500} classNames="fade">
-          <ContentRow>
-            <div className="title-experience">
-              <div className="column-experience">
-                <div
-                  className="row-experience"
-                  style={{
-                    alignItems: 'flex-start',
-                  }}
-                >
-                  <img src={Experience} />
-                  <h1>
-                    {ocupation} - <b className="green">{company}</b>
-                  </h1>
-                </div>
-                <div className="row-experience">
-                  <span>
-                    <b className="green">Cidade: </b>
-                    {city}
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{date}
-                  </span>
-                </div>
-              </div>
+      {/* <TransitionGroup>
+        <CSSTransition key={activeSection} timeout={5} classNames="fade"> */}
+      <ContentRow ref={cardRef}>
+        <div className="title-experience">
+          <div className="column-experience">
+            <div
+              className="row-experience"
+              style={{
+                alignItems: 'flex-start',
+              }}
+            >
+              <img src={Experience} />
+              <h1>
+                {ocupation} - <b className="green">{company}</b>
+              </h1>
             </div>
-            <div className="description-list">
-              {description.map((item, key) => {
-                return (
-                  <p {...{ key }} className="description-item">
-                    {item}
-                  </p>
-                );
-              })}
+            <div className="row-experience">
+              <span>
+                <b className="green">Cidade: </b>
+                {city}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{date}
+              </span>
             </div>
-            <h3 className="subtitle"> Tecnologias Usadas</h3>
-            <div className="description-techs">
-              {techs.map((item, key) => {
-                return <div {...{ key }}>{returnIconByTechnology(item)}</div>;
-              })}
-            </div>
-          </ContentRow>
-        </CSSTransition>
-      </TransitionGroup>
+          </div>
+        </div>
+        <div className="description-list">
+          {description.map((item, key) => {
+            return (
+              <p {...{ key }} className="description-item">
+                {item}
+              </p>
+            );
+          })}
+        </div>
+        <h3 className="subtitle"> Tecnologias Usadas</h3>
+        <div className="description-techs">
+          {techs.map((item, key) => {
+            return <div {...{ key }}>{returnIconByTechnology(item)}</div>;
+          })}
+        </div>
+      </ContentRow>
+      {/* </CSSTransition>
+      </TransitionGroup> */}
     </SelectExperienceContainer>
   );
 };
