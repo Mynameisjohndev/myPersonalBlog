@@ -57,12 +57,9 @@ const ContainerPage = styled.section`
 
 const Column = styled.div`
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
-  @media screen and (min-width: 1366px) {
-    .container {
-      width: 1350px;
-    }
+  @media (min-width: 1367px) {
+    width: 1280px;
   }
   /* background-color: blue; */
   display: flex;

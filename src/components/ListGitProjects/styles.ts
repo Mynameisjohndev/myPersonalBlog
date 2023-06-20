@@ -1,10 +1,19 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-const ListGitProjectsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 30px;
+const ContainerList = styled.div`
   align-self: center;
+  transition: 0.3s all;
+
+  button {
+    background-color: ${({ theme }) => theme.COLORS.GREEN_30};
+  }
+`;
+
+const ListGitProjectsContainer = styled(motion.div)`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
   width: 1120px;
   transition: 0.3s all;
   @media (max-width: 1220px) {
@@ -16,19 +25,24 @@ const ListGitProjectsContainer = styled.div`
   @media (max-width: 660px) {
     width: 280px;
   }
+
   .card {
-    background-color: red;
-    width: 250px;
-    height: 250px;
     margin: auto;
+    width: 250px;
+    background-color: ${({ theme }) => theme.COLORS.BLACK_60};
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
     transition: 0.3s all;
-    border-radius: 0.25rem;
-    cursor: pointer;
     &:hover {
-      -webkit-box-shadow: 0px 5px 18px -3px #000000;
-      box-shadow: 0px 5px 18px -3px #000000;
+      /* margin-bottom: 0.4rem; */
+      transform: scaleX(1.1);
+      width: 240px;
+      height: 240px;
     }
   }
 `;
 
-export { ListGitProjectsContainer };
+export { ListGitProjectsContainer, ContainerList };

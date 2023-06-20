@@ -10,7 +10,7 @@ const CardProject: React.FC<ICardProject> = ({ project }) => {
     <CardProjectContainer
       {...{ index }}
       // data-aos="fade-up"
-      // data-aos={`${isEven ? 'fade-left' : 'fade-right'}`}
+      data-aos={`${isEven ? 'fade-left' : 'fade-right'}`}
       // data-aos={`${isEven ? 'fade-right' : 'fade-left'}`}
       // data-aos-duration="1000"
     >
