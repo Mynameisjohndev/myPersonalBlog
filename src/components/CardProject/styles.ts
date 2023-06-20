@@ -97,13 +97,22 @@ const CardProjectContainer = styled.div<IProject>`
     display: flex;
     flex-direction: column;
     .container-image {
+      transition: 0.3s all;
       position: relative;
       display: inline-block;
       width: 450px;
       height: 250px;
-      @media (max-width: 1000px) {
-        width: 100%;
+      @media (max-width: 1110px) {
+        width: 350px;
+      }
+      /* @media (max-width: 1110px) {
+        width: 350px;
+      } */
+      @media (max-width: 600px) {
         height: 30%;
+      }
+      @media (max-width: 400px) {
+        width: 100%;
       }
     }
     .overlay-image {

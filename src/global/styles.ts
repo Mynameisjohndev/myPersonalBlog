@@ -56,6 +56,15 @@ const ContainerPage = styled.section`
 `;
 
 const Column = styled.div`
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  @media screen and (min-width: 1366px) {
+    .container {
+      width: 1350px;
+    }
+  }
+  /* background-color: blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
