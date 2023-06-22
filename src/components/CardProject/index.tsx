@@ -6,13 +6,14 @@ import { CardProjectContainer } from './styles';
 const CardProject: React.FC<ICardProject> = ({ project }) => {
   const { description, image, index, link, title, techs } = project;
   const isEven = index % 2 === 0;
+
   return (
     <CardProjectContainer
       {...{ index }}
       // data-aos="fade-up"
       data-aos={`${isEven ? 'fade-left' : 'fade-right'}`}
       // data-aos={`${isEven ? 'fade-right' : 'fade-left'}`}
-      // data-aos-duration="1000"
+      data-aos-duration="300"
     >
       <div className="column-project">
         <h1>{title}</h1>
@@ -28,8 +29,8 @@ const CardProject: React.FC<ICardProject> = ({ project }) => {
           <div className="overlay-image"></div>
         </div>
         <div className="row-techs">
-          {techs?.map(tech => {
-            return <span>{tech}</span>;
+          {techs?.map((tech, key) => {
+            return <span {...{ key }}>{tech}</span>;
           })}
         </div>
       </div>

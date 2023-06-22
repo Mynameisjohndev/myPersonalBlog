@@ -12,7 +12,6 @@ const GlobalStyle = createGlobalStyle`
 
   ::-webkit-scrollbar {
     width: 15px;
-    background-color: #313131; 
   }
  
   ::-webkit-scrollbar-corner 

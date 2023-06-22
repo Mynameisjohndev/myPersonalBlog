@@ -5,8 +5,8 @@ import { ListProjectContainer } from './styles';
 const ListProject: React.FC<IListProjects> = ({ projects }) => {
   return (
     <ListProjectContainer>
-      {projects.map((project, index) => {
-        return <CardProject {...{ project }} key={index} />;
+      {projects.map((project, key) => {
+        return <CardProject {...{ project, key }} />;
       })}
     </ListProjectContainer>
   );

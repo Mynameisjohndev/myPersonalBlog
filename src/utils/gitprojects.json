@@ -1,0 +1,76 @@
+{
+  "projects":[
+    {
+      "title": "gameplayNLW",
+      "description": "Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jogar com os amigos. Crie grupos para jogar seus games favoritos com seus amigos com esse App que possui autenticação com Discord.",
+      "link": "https://github.com/Mynameisjohndev/gameplayNLW",
+      "techs": ["React Native", "Axios" ]
+    },
+    {
+      "title": "NLW4Rocketseat",
+      "description": "MoveIt é um projeto Front-End criado durante a NLW#4 da Rocketseat. Esse projeto consiste em te tirar da sua vida sedentária durante suas várias horas trabalhando sentado.",
+      "link": "https://github.com/Mynameisjohndev/gameplayNLW",
+      "techs": [ "React", "Next Js", "TypeScript"]
+    },
+    {
+      "title": "appNLW4Mobile",
+      "description": "É a mesma aplicação croada no projeto NLW4Rocketseat, porem é uma versão mobile.",
+      "link": "https://github.com/Mynameisjohndev/gameplayNLW",
+      "techs": [ "React Native", "TypeScript" ]
+    },
+    {
+      "title": "NLW5Rocketseat",
+      "description": "O aplicativo PlantManager para lhe ajudar a lembrar de cuidar de suas plantas de forma fácil de acordo com cada tipo de plantinha.",
+      "link": "https://github.com/Mynameisjohndev/gameplayNLW",
+      "techs": [ "React Native", "TypeScript" ]
+    },
+    {
+      "title": "TheLastCarrot",
+      "description": "É um jogo de plataforma 2D, com sprites em pixel art, desenvolvida no meu de jogos com Java.",
+      "link": "https://github.com/Mynameisjohndev/TheLastCarrot",
+      "techs": ["Java"]
+    },
+    {
+      "title": "deliveryAppCourse",
+      "description": "Alicativo de delivery para o cliente fazer pedidos pelo celular e poder acompnhar em tempo real, desenvolvida no meu de desenvolvimento mobile.",
+      "link": "https://github.com/Mynameisjohndev/deliveryAppCourse",
+      "techs": ["React Native", "Firebase" ]
+    },
+    {
+      "title": "plataform2dUnity",
+      "description": "É um jogo de plataforma 2D, com sprites em pixel art, desenvolvido para fins de aprendizado com unity.",
+      "link": "https://github.com/Mynameisjohndev/plataform2dUnity",
+      "techs": ["C#", "Unity"]
+    },
+    {
+      "title": "encurtadorDeUrl",
+      "description": "Encurtador de url feito para encurtar qualquer url.",
+      "link": "https://github.com/Mynameisjohndev/encurtadorDeUrl",
+      "techs": ["Node Js", "TypeScript", "Express", "Mongo Db"]
+    },
+    {
+      "title": "sistemasDeProntuariosReact",
+      "description": "Sistema para os psicólogos fazerem o gerenciamento dos seus pacientes.",
+      "link": "https://github.com/Mynameisjohndev/encurtadorDeUrl",
+      "techs": ["React", "Firebase"]
+    },
+    {
+      "title": "apiCloneInstagran",
+      "description": "Simples api para algumas funcionalidade do instagram como criar usuários e posts.",
+      "link": "https://github.com/Mynameisjohndev/apiCloneInstagran",
+      "techs": ["Node Js", "Graphql", "Apollo Server"]
+    },
+    {
+      "title": "movieReactNative",
+      "description": "Aplicativo para poder ver as ultimas tendências de filmes, series, quadradinhos, etc.",
+      "link": "https://github.com/Mynameisjohndev/movieReactNative",
+      "techs": ["React Native", "Firebase", "TypeScript" ]
+    },
+    {
+      "title": "sistemasDeChamadoReactJs",
+      "description": "O projeto é um sistema de chamados intuitivo e ágil, permitindo que os usuários registrem e acompanhem suas solicitações de suporte de forma simplificada.",
+      "link": "https://github.com/Mynameisjohndev/sistemasDeChamadoReactJs",
+      "techs": ["React", "Firebase" ]
+    }
+  ]
+}
