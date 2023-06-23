@@ -5,10 +5,15 @@ import styled from 'styled-components';
 const CardGitProjectContainer = styled(motion.div)`
   /* border: 0.1px solid
       ${({ theme }) => transparentize(0.9, theme.COLORS.WHITE)}; */
-  margin: auto;
-  width: 250px;
+  /* margin: auto; */
+  align-self: center;
+  width: 350px;
+  height: 350px;
+  @media (max-width: 550px) {
+    width: 250px;
+    height: 250px;
+  }
   background-color: ${({ theme }) => theme.COLORS.BLACK_60};
-  height: 250px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -49,11 +54,11 @@ const CardGitProjectContainer = styled(motion.div)`
     }
     h1 {
       color: ${({ theme }) => theme.COLORS.WHITE};
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       font-weight: 500;
     }
     p {
-      font-size: 0.65rem;
+      font-size: 0.7rem;
       width: 100%;
       color: ${({ theme }) => transparentize(0.5, theme.COLORS.WHITE)};
     }

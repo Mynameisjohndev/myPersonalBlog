@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const ListProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 3rem;
 `;
 
