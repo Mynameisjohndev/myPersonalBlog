@@ -2,7 +2,6 @@ import { styled } from 'styled-components';
 
 export const ContainerExperiencePage = styled.section`
   min-height: 100vh;
-  /* max-height: 100%; */
   min-width: 100%;
   padding: 3rem;
   display: flex;
@@ -10,13 +9,25 @@ export const ContainerExperiencePage = styled.section`
   justify-content: space-between;
   align-items: center;
   transition: 0.3s all;
+
+  .experience-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+  }
+
   .column-experience {
+    background-color: red;
     transition: 0.3s all;
     width: 65%;
     display: flex;
     flex-direction: column;
-    height: 460px;
-    /* overflow-y: auto; */
+    /* height: 460px; */
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -28,6 +39,8 @@ export const ContainerExperiencePage = styled.section`
   }
   .ilustration {
     width: 30%;
+    /* width: 400px;
+    height: 200px; */
   }
   @media (max-width: 950px) {
     flex-direction: column;
@@ -35,9 +48,9 @@ export const ContainerExperiencePage = styled.section`
       width: 100%;
     }
   }
-  @media (max-height: 500px) {
+  @media (max-height: 800px) {
     .column-experience {
-      height: 100%;
+      /* height: 100%; */
     }
   }
 `;

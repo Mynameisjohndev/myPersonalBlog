@@ -17,12 +17,12 @@ export const ContainerAboutPage = styled.section`
       width: 70%;
       transition: 0.3s all;
       &::before {
-        content: '';
+        /* content: '';
         display: block;
         width: 1.2rem;
         border-radius: 0.6rem;
         min-height: 100%;
-        background-color: ${theme.COLORS.GREEN_30};
+        background-color: ${theme.COLORS.GREEN_30}; */
       }
 
       .column-description {

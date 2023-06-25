@@ -11,9 +11,10 @@ const ContainerHeader = styled.nav`
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   z-index: 10;
-  li {
+  a {
     transition: 0.3s all;
-    list-style: none;
+    /* list-style: none; */
+    text-decoration: none;
     margin-right: 3rem;
     ${({ theme }) => css`
       color: ${theme.COLORS.WHITE};

@@ -39,9 +39,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html{
+    scroll-behavior: smooth;
     background-color: #313131; 
   }
-
+  
+  body{
+    /* background-color: var(--black-900); */
+    /* -webkit-font-smoothing: ; */
+  }
   button{
     cursor: pointer;
   }
@@ -57,6 +62,7 @@ const ContainerPage = styled.section`
 const Column = styled.div`
   width: 100%;
   margin: 0 auto;
+  scroll-behavior: smooth;
   @media (min-width: 1367px) {
     width: 1280px;
   }

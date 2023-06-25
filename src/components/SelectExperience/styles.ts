@@ -6,6 +6,7 @@ const SelectExperienceContainer = styled.div`
   flex-direction: column;
   width: 70%;
   transition: 0.3s all;
+  height: 500px;
   .scroll-row {
     height: 1.7rem;
     overflow-y: hidden;
@@ -30,7 +31,7 @@ const SelectExperienceContainer = styled.div`
     width: 100%;
     height: 100%;
   }
-  .fade-enter {
+  /* .fade-enter {
     opacity: 0;
     transform: translateX(70%);
   }
@@ -47,7 +48,7 @@ const SelectExperienceContainer = styled.div`
     opacity: 0;
     transform: translateX(-100%);
     transition: opacity 100ms;
-  }
+  } */
   @media (max-width: 550px) {
     width: 100%;
   }

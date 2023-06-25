@@ -18,8 +18,9 @@ const ContainerList = styled.div`
     height: 3rem;
     margin-top: 1.5rem;
     transition: 0.3s all;
+    cursor: pointer;
     &:hover {
-      transform: scale(2);
+      transform: scale(1.2);
     }
   }
 `;

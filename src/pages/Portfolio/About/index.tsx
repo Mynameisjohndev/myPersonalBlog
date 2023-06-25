@@ -16,7 +16,7 @@ const About = () => {
   const [showName, setShowName] = useState(false);
 
   return (
-    <ContainerAboutPage>
+    <ContainerAboutPage id="about">
       <div className="container-description">
         <div className="column-description">
           <animated.div style={props}>

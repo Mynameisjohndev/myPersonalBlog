@@ -6,7 +6,7 @@ import { ContainerProjects } from './styles';
 
 const Projects = () => {
   return (
-    <ContainerProjects>
+    <ContainerProjects id="projects">
       <h1>Algumas coisas que desenvolvi</h1>
       <ListProject {...{ projects: data.projects }} />
       <h1>Outros projetos notáveis</h1>

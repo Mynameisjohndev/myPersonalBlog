@@ -4,10 +4,10 @@ import { ContainerHeader } from './styles';
 const Header = () => {
   return (
     <ContainerHeader id="navbar">
-      <li>Sobre</li>
-      <li>Experiências</li>
-      <li>Projetos</li>
-      <li>Contato</li>
+      <a href="#about">Sobre</a>
+      <a href="#experience">Experiências</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
     </ContainerHeader>
   );
 };
