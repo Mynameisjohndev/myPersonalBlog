@@ -21,7 +21,7 @@ export const ContainerExperiencePage = styled.section`
   }
 
   .column-experience {
-    background-color: red;
+    /* background-color: red; */
     transition: 0.3s all;
     width: 65%;
     display: flex;

@@ -16,7 +16,7 @@ const ContainerSocial = styled.nav`
     width: ${icon}rem;
     height: ${icon}rem;
     cursor: pointer;
-    transition: 0.1s all;
+    transition: 0.3s all;
     ${({ theme }) => css`
       color: ${theme.COLORS.WHITE};
       &:hover {

@@ -51,8 +51,8 @@ export const Social = () => {
         src={isHover && id === 'instagran' ? IntagranG : IntagranW}
       /> */}
 
-      <a target="_blank" href="">
-        <AiFillInstagram href="" />
+      <a target="_blank" href="https://www.instagram.com/mynameisjohn.dev/">
+        <AiFillInstagram />
       </a>
       <a
         target="_blank"
