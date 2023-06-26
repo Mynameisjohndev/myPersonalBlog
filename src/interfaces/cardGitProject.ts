@@ -8,7 +8,7 @@ export interface ICardGitProject {
 
 export interface IDataCardGitProject {
   card: ICardGitProject;
-  action: (index: number) => void;
+  action?: (index: number) => void;
 }
 
 export interface IListCardGitProject {

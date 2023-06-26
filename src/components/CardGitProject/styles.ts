@@ -3,15 +3,12 @@ import { transparentize } from 'polished';
 import styled from 'styled-components';
 
 const CardGitProjectContainer = styled(motion.div)`
-  /* border: 0.1px solid
-      ${({ theme }) => transparentize(0.9, theme.COLORS.WHITE)}; */
-  /* margin: auto; */
   align-self: center;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   @media (max-width: 550px) {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
   }
   background-color: ${({ theme }) => theme.COLORS.BLACK_60};
   display: flex;
@@ -20,6 +17,21 @@ const CardGitProjectContainer = styled(motion.div)`
   border-radius: 0.4rem;
   padding: 0.4rem;
   overflow-x: auto;
+  &:hover {
+    .content {
+      h1 {
+        transition: 0.3s all;
+        color: ${({ theme }) => theme.COLORS.GREEN_30};
+      }
+    }
+    .showingit {
+      svg {
+        transition: 0.3s all;
+        fill: ${({ theme }) => theme.COLORS.GREEN_30};
+      }
+    }
+  }
+
   &::-webkit-scrollbar {
     height: 8px;
   }
@@ -32,14 +44,27 @@ const CardGitProjectContainer = styled(motion.div)`
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    a {
+      text-decoration: none;
+    }
     svg {
       width: 40px;
       height: 40px;
+      fill: white;
     }
     .showingit {
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
+      display: flex;
+      width: 30px;
+      svg {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+      &:hover {
+        transition: 0.3s all;
+        width: 100px;
+        background-color: RED;
+      }
     }
   }
   .content {
@@ -47,13 +72,9 @@ const CardGitProjectContainer = styled(motion.div)`
     flex-direction: column;
     width: 100%;
     transition: 0.3s all;
-    &:hover {
-      h1 {
-        color: ${({ theme }) => theme.COLORS.GREEN_30};
-      }
-    }
     h1 {
       color: ${({ theme }) => theme.COLORS.WHITE};
+      transition: 0.3s all;
       font-size: 1.2rem;
       font-weight: 500;
     }
@@ -71,10 +92,6 @@ const CardGitProjectContainer = styled(motion.div)`
       font-size: 0.6rem;
       color: ${({ theme }) => transparentize(0.6, theme.COLORS.WHITE)};
     }
-  }
-  &:hover {
-    /* -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.4);
-      box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.4); */
   }
 `;
 

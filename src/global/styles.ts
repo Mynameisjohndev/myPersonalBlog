@@ -47,9 +47,20 @@ const GlobalStyle = createGlobalStyle`
     /* background-color: var(--black-900); */
     /* -webkit-font-smoothing: ; */
   }
+  
   button{
     cursor: pointer;
   }
+
+  .page-title{
+    transition: 0.3s all;
+    font-size: 2.5rem;
+    font-weight: bold;
+    @media(max-width: 950px){
+      font-size: 1.8rem;
+    }
+  }
+
 `;
 
 const ContainerPage = styled.section`
@@ -66,7 +77,6 @@ const Column = styled.div`
   @media (min-width: 1367px) {
     width: 1280px;
   }
-  /* background-color: blue; */
   display: flex;
   flex-direction: column;
   align-items: center;

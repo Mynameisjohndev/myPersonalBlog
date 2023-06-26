@@ -7,9 +7,9 @@ import { ContainerProjects } from './styles';
 const Projects = () => {
   return (
     <ContainerProjects id="projects">
-      <h1>Algumas coisas que desenvolvi</h1>
+      <h1 className="page-title">Algumas coisas que desenvolvi</h1>
       <ListProject {...{ projects: data.projects }} />
-      <h1>Outros projetos notáveis</h1>
+      <h1 className="page-title">Outros projetos notáveis</h1>
       <ListGitProjects {...{ projects: datagit.projects }} />
     </ContainerProjects>
   );

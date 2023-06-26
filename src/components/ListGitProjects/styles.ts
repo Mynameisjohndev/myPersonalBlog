@@ -27,17 +27,18 @@ const ContainerList = styled.div`
 
 const ListGitProjectsContainer = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
-  width: 1070px;
+  width: 920px;
   @media (max-width: 1220px) {
-    width: 710px;
+    width: 610px;
   }
   @media (max-width: 860px) {
-    width: 350px;
+    width: 300px;
   }
   @media (max-width: 550px) {
-    width: 250px;
+    width: 230px;
+    grid-gap: 10px;
   }
 `;
 

@@ -3,8 +3,8 @@ import { AiFillFolder, AiFillGithub } from 'react-icons/ai';
 import { IDataCardGitProject } from '../../interfaces/cardGitProject';
 import { CardGitProjectContainer } from './styles';
 
-const CardGitProject = ({ card, action }: IDataCardGitProject) => {
-  const { description, title, techs, index } = card;
+const CardGitProject = ({ card }: IDataCardGitProject) => {
+  const { description, title, techs, link } = card;
   const cardVariants = {
     // hidden: { opacity: 0, y: 50 },
     // show: { opacity: 1, y: 0 },
@@ -12,7 +12,6 @@ const CardGitProject = ({ card, action }: IDataCardGitProject) => {
   };
   return (
     <CardGitProjectContainer
-      onClick={() => action(index)}
       variants={cardVariants}
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -28,7 +27,9 @@ const CardGitProject = ({ card, action }: IDataCardGitProject) => {
       <div className="column">
         <div className="title">
           <AiFillFolder />
-          <AiFillGithub className="showingit" />
+          <a href={link} target="_blank" className="showingit">
+            <AiFillGithub />
+          </a>
         </div>
         <div className="content">
           <h1>{title}</h1>

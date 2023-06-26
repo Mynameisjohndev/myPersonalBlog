@@ -3,7 +3,7 @@ import { css, styled } from 'styled-components';
 export const ContainerAboutPage = styled.section`
   min-height: 100vh;
   min-width: 100%;
-  padding: 3rem;
+  padding: 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -99,10 +99,6 @@ export const ContainerAboutPage = styled.section`
         h1 {
           font-size: 2.5rem;
         }
-        /* p,
-        a {
-          font-size: 1rem;
-        } */
       }
     }
   }

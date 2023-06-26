@@ -126,13 +126,11 @@ const Experiencies = () => {
   ];
   return (
     <ContainerExperiencePage id="experience">
-      {/* <div className="experience-content"> */}
       <div className="column-experience">
-        <h1>Experiências</h1>
+        <h1 className="page-title">Experiências</h1>
         <SelectExperience sections={sections} />
       </div>
       <img draggable="false" src={Ilustration} className="ilustration" />
-      {/* </div> */}
     </ContainerExperiencePage>
   );
 };

@@ -5,13 +5,12 @@ const icon = 2.4;
 export const ContainerAboutPage = styled.section`
   min-height: 100vh;
   min-width: 100%;
-  padding: 3rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.3s all;
   flex-direction: row;
-
   @media (max-width: 950px) {
     flex-direction: column;
   }
@@ -22,16 +21,23 @@ export const ContainerAboutPage = styled.section`
     justify-content: center;
     flex-direction: column;
     margin-left: 3rem;
-    width: 60%;
+    width: 45%;
+    @media (max-width: 950px) {
+      margin-left: 0rem;
+      margin-top: 1rem;
+      width: 80%;
+    }
     p {
       transition: 0.3s all;
-      font-size: 2rem;
+      font-size: 1.6rem;
       transition: 0.3s all;
       @media (max-width: 950px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        /* margin-left: 0rem; */
       }
       @media (max-width: 650px) {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        /* margin-left: 0rem; */
       }
     }
     .row-contacts {
@@ -95,6 +101,9 @@ export const ContainerAboutPage = styled.section`
         }
       }
     }
+  }
+  .contact-ilustration {
+    width: 300px;
   }
   @media (max-width: 950px) {
     .contact-ilustration {
