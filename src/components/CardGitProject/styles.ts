@@ -54,16 +54,20 @@ const CardGitProjectContainer = styled(motion.div)`
     }
     .showingit {
       display: flex;
-      width: 30px;
-      svg {
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      background-color: red;
+      transition: 0.3s all;
+      width: 40px;
+      span {
+        display: none;
+        transition: 0.3s all;
       }
       &:hover {
-        transition: 0.3s all;
-        width: 100px;
-        background-color: RED;
+        width: 12z0px;
+        span {
+          display: flex;
+        }
       }
     }
   }
@@ -87,10 +91,15 @@ const CardGitProjectContainer = styled(motion.div)`
   .footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     span {
       margin: 0.15rem;
       font-size: 0.6rem;
       color: ${({ theme }) => transparentize(0.6, theme.COLORS.WHITE)};
+      &:hover {
+        transition: 0.3s all;
+        color: ${({ theme }) => theme.COLORS.GREEN_30};
+      }
     }
   }
 `;
