@@ -56,8 +56,9 @@ const GlobalStyle = createGlobalStyle`
     transition: 0.3s all;
     font-size: 2.5rem;
     font-weight: bold;
+    padding-left: 2rem;
     @media(max-width: 950px){
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
 

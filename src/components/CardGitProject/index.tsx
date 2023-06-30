@@ -29,6 +29,7 @@ const CardGitProject = ({ card }: IDataCardGitProject) => {
           <AiFillFolder />
           <a href={link} target="_blank" className="showingit">
             <AiFillGithub />
+            <span>Acessar</span>
           </a>
         </div>
         <div className="content">
