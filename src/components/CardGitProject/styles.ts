@@ -18,6 +18,7 @@ const CardGitProjectContainer = styled(motion.div)`
   padding: 0.4rem;
   overflow-x: auto;
   &:hover {
+    /* transform: perspective(300px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); */
     .content {
       h1 {
         transition: 0.3s all;
@@ -36,39 +37,44 @@ const CardGitProjectContainer = styled(motion.div)`
     height: 8px;
   }
   .column {
+    transition: 0.3s all;
     display: flex;
     flex-direction: column;
   }
   .title {
+    transition: 0.3s all;
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     a {
+      transition: 0.3s all;
       text-decoration: none;
     }
     svg {
+      transition: 0.3s all;
       width: 40px;
       height: 40px;
       fill: white;
     }
     .showingit {
+      transition: 0.3s all;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: red;
       transition: 0.3s all;
-      width: 40px;
+      /* width: 140px;
       span {
+        transition: 0.3s all;
         display: none;
         transition: 0.3s all;
+        color: #fff;
       }
       &:hover {
-        width: 12z0px;
         span {
           display: flex;
         }
-      }
+      } */
     }
   }
   .content {

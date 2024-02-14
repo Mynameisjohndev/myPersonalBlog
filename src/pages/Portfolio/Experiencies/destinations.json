@@ -1,0 +1,606 @@
+{
+	"destinos": [
+		{
+			"name": "Barcelona",
+			"country": "Espanha",
+			"keywords": [
+				"Gaudí",
+				"Futebol",
+				"Praias",
+				"Gastronomia",
+				"Arte"
+			],
+      "description": "Barcelona, na Espanha, é um destino conhecido por sua rica cultura e beleza arquitetônica. A cidade é famosa pelas obras do renomado arquiteto Antoni Gaudí, como a Sagrada Família e o Parque Güell. Além disso, Barcelona é um paraíso para os amantes de futebol, com o icônico estádio Camp Nou. As praias de Barcelona também são um destaque, oferecendo um local perfeito para relaxar e desfrutar do clima mediterrâneo. A gastronomia local é uma combinação de sabores tradicionais e modernos, com uma variedade de tapas e frutos do mar frescos. A cidade também é um centro de arte, com museus e galerias que abrigam obras de artistas renomados.",
+      "url_image": "https://blog.descubraomundo.com/wp-content/uploads/2014/05/barcelona_parcguell2.jpg"
+		},
+		{
+			"name": "Berlim",
+			"country": "Alemanha",
+			"keywords": [
+				"História",
+				"Arte",
+				"Tecnologia",
+				"Música",
+				"Arquitetura"
+			],
+      "url_image": "https://a.cdn-hotels.com/gdcs/production65/d1834/10cddc29-031d-41f5-93a9-e8642a008dfc.jpg"
+		},
+		{
+			"name": "Dubai",
+			"country": "Emirados Árabes Unidos",
+			"keywords": [
+				"Luxo",
+				"Arquitetura moderna",
+				"Compras",
+				"Deserto",
+				"Vida noturna"
+			],
+      "url_image": "https://vaipromundo.com.br/blog/wp-content/uploads/2019/01/destaque-vpm-dubai.jpg"
+		},
+		{
+			"name": "Buenos Aires",
+			"country": "Argentina",
+			"keywords": [
+				"Tango",
+				"Carne",
+				"Futebol",
+				"Arte",
+				"Cultura"
+			],
+      "url_image": "https://www.wefashiontrends.com/wp-content/uploads/2017/06/BUENOS-AIRES-e1497281910557.jpg"
+		},
+		{
+			"name": "Istambul",
+			"country": "Turquia",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Mercados",
+				"Mesquitas"
+			]
+		},
+		{
+			"name": "Cairo",
+			"country": "Egito",
+			"keywords": [
+				"Pirâmides",
+				"História",
+				"Cultura",
+				"Museus",
+				"Rio Nilo"
+			]
+		},
+		{
+			"name": "Lisboa",
+			"country": "Portugal",
+			"keywords": [
+				"História",
+				"Gastronomia",
+				"Fado",
+				"Vinho",
+				"Arquitetura"
+			]
+		},
+		{
+			"name": "Machu Picchu",
+			"country": "Peru",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Aventura",
+				"Natureza",
+				"Incas"
+			]
+		},
+		{
+			"name": "Amsterdã",
+			"country": "Holanda",
+			"keywords": [
+				"Canais",
+				"Bicicletas",
+				"Arte",
+				"História",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Praga",
+			"country": "República Tcheca",
+			"keywords": [
+				"História",
+				"Arquitetura",
+				"Cerveja",
+				"Arte",
+				"Cultura"
+			]
+		},
+		{
+			"name": "Sydney",
+			"country": "Austrália",
+			"keywords": [
+				"Ópera de Sydney",
+				"Harbour Bridge",
+				"Praias",
+				"Vida selvagem",
+				"Surf"
+			]
+		},
+		{
+			"name": "Cape Town",
+			"country": "África do Sul",
+			"keywords": [
+				"Montanha da Mesa",
+				"Vinhos",
+				"História",
+				"Vida selvagem",
+				"Praias"
+			]
+		},
+		{
+			"name": "Roma",
+			"country": "Itália",
+			"keywords": [
+				"Coliseu",
+				"Vaticano",
+				"História",
+				"Gastronomia",
+				"Arte"
+			]
+		},
+		{
+			"name": "Bangkok",
+			"country": "Tailândia",
+			"keywords": [
+				"Templos",
+				"Mercados flutuantes",
+				"Gastronomia",
+				"Massagem tailandesa",
+				"Cultura"
+			]
+		},
+		{
+			"name": "Paris",
+			"country": "França",
+			"keywords": [
+				"Torre Eiffel",
+				"Louvre",
+				"Gastronomia",
+				"Arte",
+				"História"
+			]
+		},
+		{
+			"name": "Tokyo",
+			"country": "Japão",
+			"keywords": [
+				"Tecnologia",
+				"Anime",
+				"Sushi",
+				"Templos",
+				"Cultura"
+			]
+		},
+		{
+			"name": "Rio de Janeiro",
+			"country": "Brasil",
+			"keywords": [
+				"Praias",
+				"Samba",
+				"Cristo Redentor",
+				"Futebol",
+				"Carnaval"
+			]
+		},
+		{
+			"name": "Nova York",
+			"country": "Estados Unidos",
+			"keywords": [
+				"Times Square",
+				"Broadway",
+				"Central Park",
+				"Estátua da liberdade",
+				"Shopping"
+			]
+		},
+		{
+			"name": "Viena",
+			"country": "Áustria",
+			"keywords": [
+				"Música",
+				"Arte",
+				"História",
+				"Arquitetura",
+				"Gastronomia"
+			]
+		},
+		{
+			"name": "Atenas",
+			"country": "Grécia",
+			"keywords": [
+				"História",
+				"Mitologia",
+				"Gastronomia",
+				"Praias",
+				"Cultura"
+			]
+		},
+		{
+			"name": "Havana",
+			"country": "Cuba",
+			"keywords": [
+				"Música",
+				"Carros antigos",
+				"História",
+				"Praias",
+				"Cultura"
+			]
+		},
+		{
+			"name": "Copenhague",
+			"country": "Dinamarca",
+			"keywords": [
+				"Design",
+				"Bicicletas",
+				"Gastronomia",
+				"História",
+				"Cultura"
+			]
+		},
+		{
+			"name": "Edimburgo",
+			"country": "Escócia",
+			"keywords": [
+				"História",
+				"Castelos",
+				"Whisky",
+				"Festivais",
+				"Natureza"
+			]
+		},
+		{
+			"name": "Dublin",
+			"country": "Irlanda",
+			"keywords": [
+				"História",
+				"Cerveja",
+				"Música",
+				"Literatura",
+				"Natureza"
+			]
+		},
+		{
+			"name": "Helsinque",
+			"country": "Finlândia",
+			"keywords": [
+				"Design",
+				"Natureza",
+				"Saunas",
+				"História",
+				"Cultura"
+			]
+		},
+		{
+			"name": "Reykjavik",
+			"country": "Islândia",
+			"keywords": [
+				"Natureza",
+				"Aurora boreal",
+				"Geleiras",
+				"Geysers",
+				"Aventura"
+			]
+		},
+		{
+			"name": "Lima",
+			"country": "Peru",
+			"keywords": [
+				"Gastronomia",
+				"História",
+				"Cultura",
+				"Surf",
+				"Natureza"
+			]
+		},
+		{
+			"name": "Marrakech",
+			"country": "Marrocos",
+			"keywords": [
+				"Cultura",
+				"História",
+				"Mercados",
+				"Gastronomia",
+				"Deserto"
+			]
+		},
+		{
+			"name": "Oslo",
+			"country": "Noruega",
+			"keywords": [
+				"Natureza",
+				"História",
+				"Museus",
+				"Fjords",
+				"Cultura"
+			]
+		},
+		{
+			"name": "Estocolmo",
+			"country": "Suécia",
+			"keywords": [
+				"Design",
+				"História",
+				"Museus",
+				"Gastronomia",
+				"Cultura"
+			]
+		},
+		{
+			"name": "Zurique",
+			"country": "Suíça",
+			"keywords": [
+				"Natureza",
+				"História",
+				"Museus",
+				"Gastronomia",
+				"Cultura"
+			]
+		},
+		{
+			"name": "Tel Aviv",
+			"country": "Israel",
+			"keywords": [
+				"História",
+				"Praias",
+				"Gastronomia",
+				"Cultura",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Vancouver",
+			"country": "Canadá",
+			"keywords": [
+				"Natureza",
+				"Esportes ao ar livre",
+				"Gastronomia",
+				"Cultura",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Melbourne",
+			"country": "Austrália",
+			"keywords": [
+				"Arte",
+				"Gastronomia",
+				"Esportes",
+				"Cultura",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Wellington",
+			"country": "Nova Zelândia",
+			"keywords": [
+				"Natureza",
+				"Aventura",
+				"Cultura",
+				"Gastronomia",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Santiago",
+			"country": "Chile",
+			"keywords": [
+				"Natureza",
+				"Vinhos",
+				"História",
+				"Cultura",
+				"Gastronomia"
+			]
+		},
+		{
+			"name": "Bogotá",
+			"country": "Colômbia",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Cidade do México",
+			"country": "México",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Montreal",
+			"country": "Canadá",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Toronto",
+			"country": "Canadá",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Chicago",
+			"country": "Estados Unidos",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Los Angeles",
+			"country": "Estados Unidos",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Miami",
+			"country": "Estados Unidos",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "San Francisco",
+			"country": "Estados Unidos",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Seattle",
+			"country": "Estados Unidos",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Washington D.C.",
+			"country": "Estados Unidos",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Boston",
+			"country": "Estados Unidos",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		},
+		{
+			"name": "Philadelphia",
+			"country": "Estados Unidos",
+			"keywords": [
+				"História",
+				"Cultura",
+				"Gastronomia",
+				"Arte",
+				"Vida noturna"
+			]
+		}
+	],
+	"keywords": [
+		"Gaudí",
+		"Futebol",
+		"Praias",
+		"Gastronomia",
+		"Arte",
+		"História",
+		"Tecnologia",
+		"Música",
+		"Arquitetura",
+		"Luxo",
+		"Arquitetura moderna",
+		"Compras",
+		"Deserto",
+		"Vida noturna",
+		"Tango",
+		"Carne",
+		"Cultura",
+		"Mercados",
+		"Mesquitas",
+		"Pirâmides",
+		"Museus",
+		"Rio Nilo",
+		"Fado",
+		"Vinho",
+		"Aventura",
+		"Natureza",
+		"Incas",
+		"Canais",
+		"Bicicletas",
+		"Cerveja",
+		"Ópera de Sydney",
+		"Harbour Bridge",
+		"Vida selvagem",
+		"Surf",
+		"Montanha da Mesa",
+		"Vinhos",
+		"Coliseu",
+		"Vaticano",
+		"Templos",
+		"Mercados flutuantes",
+		"Massagem tailandesa",
+		"Torre Eiffel",
+		"Louvre",
+		"Anime",
+		"Sushi",
+		"Samba",
+		"Cristo Redentor",
+		"Carnaval",
+		"Times Square",
+		"Broadway",
+		"Central Park",
+		"Estátua da liberdade",
+		"Shopping",
+		"Mitologia",
+		"Carros antigos",
+		"Design",
+		"Castelos",
+		"Whisky",
+		"Festivais",
+		"Literatura",
+		"Saunas",
+		"Aurora boreal",
+		"Geleiras",
+		"Geysers",
+		"Fjords",
+		"Esportes ao ar livre",
+		"Esportes"
+	]
+}

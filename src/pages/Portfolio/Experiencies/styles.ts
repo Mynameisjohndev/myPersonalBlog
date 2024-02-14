@@ -9,6 +9,7 @@ export const ContainerExperiencePage = styled.section`
   justify-content: space-between;
   align-items: center;
   transition: 0.3s all;
+  padding: 3rem;
 
   .experience-content {
     width: 100%;
